@@ -13,13 +13,14 @@ Environment of dev
     Python: Python 3.9.2 (tags/v3.9.2:1a79785, Feb 19 2021, 13:44:55) [MSC v.1928 64 bit (AMD64)] on win32;
     Dependency: psutil(5.8.0) scapy(2.4.5);
 
-    Prepare:
+Prepare, suppose you have python3 on your machine
 
     pip3 install scapy psutil
+    
+Then input the following command get the usage
 
-    then:
     python CaptureProcess2.0.py -h
-    usage: CaptureProcess2.0.py [-h] [--process PROCESS] [--status STATUS] [--list] [--timeout TIMEOUT]
+         usage: CaptureProcess2.0.py [-h] [--process PROCESS] [--status STATUS] [--list] [--timeout TIMEOUT]
 
     Capture tcp flow(s) of running process(es) on your machine
 
@@ -32,6 +33,10 @@ Environment of dev
       --list, -l        List all tcp status of target process
       --timeout TIMEOUT, -t TIMEOUT
                         time interval you want to pass default is 10s
+
+Examples:
+
+        python CaptureProcess2.0.py # capture established tcp flows of all running processes on your machine
 
 
 
