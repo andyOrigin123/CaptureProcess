@@ -36,7 +36,18 @@ Then input the following command get the usage
 
 Examples:
 
-        python CaptureProcess2.0.py # capture established tcp flows of all running processes on your machine
-
+        # capture established tcp flows of all running processes on your machine
+        1 python CaptureProcess2.0.py 
+        
+        # list established tcp flows of all running processes on your machine
+        2 python CaptureProcess2.0.py -l 
+        
+        # list target status(es) tcp flows of all running target process(es) on your machine
+        3 python CaptureProcess2.0.py -p "yourTargetProcess_1 yourTargetProcess_2 ... yourTargetProcess_n" -s "established syn_sent" -l
+        
+        # capture target status(es) tcp flows of all running target process(es) on your machine
+        4 python CaptureProcess2.0.py -p "yourTargetProcess_1 yourTargetProcess_2 ... yourTargetProcess_n" -s "established syn_sent"
+        
+        
 
 
