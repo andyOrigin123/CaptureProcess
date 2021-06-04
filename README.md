@@ -9,6 +9,8 @@ The project is written in python3 and involves third-party libraries such as psu
 
 If you find any problems or bugs, you can leave a message in the comment area to discuss and exchange.
 
+The future of the project is created by us!
+
 
 
         
